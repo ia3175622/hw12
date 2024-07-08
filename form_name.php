@@ -16,8 +16,8 @@ echo "<pre>";
 var_dump($_REQUEST);
 echo "</pre>";
 
-$arUserInfo = array("name"=>$_REQUEST['user_name'], $_REQUEST['user_second_name'],$_REQUEST['user_last_name'],
-$_REQUEST['user_city'], $_REQUEST['user_street'],$_REQUEST['user_house_number'],$_REQUEST['user_room_number']);
+$arUserInfo = array("name"=>$_REQUEST['user_name'],"second_name"=>$_REQUEST['user_second_name'],"last_name"=>$_REQUEST['user_last_name'],
+"city"=>$_REQUEST['user_city'],"street"=>$_REQUEST['user_street'],"house_number"=>$_REQUEST['user_house_number'],"room_number"=>$_REQUEST['user_room_number']);
 
 $strUserInfo = json_encode($arUserInfo, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 ?>
